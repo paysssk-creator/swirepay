@@ -1,0 +1,10 @@
+# 安装React Native CLI
+npm install -g @react-native/cli
+
+# 创建APP项目
+npx react-native init SwirePayApp
+cd SwirePayApp
+
+# 安装必要依赖
+npm install axios react-navigation react-native-paper
+npm install react-native-vector-icons
