@@ -1,0 +1,8 @@
+# 1. 配置Xcode项目
+cd ios && pod install
+
+# 2. 在Xcode中打开项目
+open SwirePayApp.xcworkspace
+
+# 3. 配置签名和证书
+# 4.  Archive and Upload to App Store
