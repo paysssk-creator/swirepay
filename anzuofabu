@@ -1,0 +1,12 @@
+# 1. 生成签名密钥
+keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+
+# 2. 配置签名
+# 编辑 android/app/build.gradle
+
+# 3. 生成APK
+cd android
+./gradlew assembleRelease
+
+# 4. 生成AAB（推荐）
+./gradlew bundleRelease
