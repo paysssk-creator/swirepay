@@ -1,0 +1,16 @@
+# README-OpenSource.md
+# SwirePay - 开源支付编排平台
+
+## 🌟 项目特色
+- 多种支付渠道集成（Stripe、支付宝、微信、ACH等）
+- ACH RTP即时支付（15-60秒到账）
+- 智能支付路由
+- 完整的管理后台
+- RESTful API
+
+## 🚀 快速开始
+```bash
+git clone https://github.com/yourusername/SwirePay
+cd SwirePay
+pip install -r requirements.txt
+python backend/app.py
