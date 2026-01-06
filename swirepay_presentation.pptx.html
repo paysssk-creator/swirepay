@@ -1,0 +1,2626 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwirePay 支付平台 - 3天交付方案</title>
+    <script src="https://statics.moonshot.cn/kimi-ppt/html-gen/static/tailwindcss@4_0805.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chiron+Hei+HK:wght@400;700&family=Quattrocento+Sans:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .ppt-slide {
+                @apply relative w-[1280px] h-[720px] mx-auto p-[40px] box-border overflow-hidden mb-[40px] bg-[#1A202C];
+            }
+        }
+    </style>
+    <style>
+        body {
+            color: #F7FAFC;
+            font-family: 'Noto Serif SC', 'Quattrocento', serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Chiron Hei HK', 'Quattrocento Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 py-8">
+    
+    <!-- Slide 1: Cover -->
+    <div class="ppt-slide" type="cover">
+        <img src="cover_image.png" alt="Cover Background" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#1A202C]/95 via-[#1A202C]/85 to-transparent"></div>
+        <div class="relative h-full flex flex-col justify-center">
+            <div class="max-w-3xl">
+                <h1 class="text-8xl font-bold text-[#F7FAFC] mb-6 leading-tight tracking-tight">SwirePay</h1>
+                <p class="text-5xl font-bold text-[#B79492] mb-6">支付平台</p>
+                <div class="h-1 w-32 bg-[#B79492] mb-8"></div>
+                <p class="text-2xl text-[#A0AEC0] mb-4 leading-relaxed">全球支付编排与对账解决方案</p>
+                <p class="text-xl text-[#A0AEC0] mb-12">3天快速交付方案</p>
+                <div class="flex items-center gap-6">
+                    <div class="bg-[#B79492]/20 px-6 py-3 rounded-lg border border-[#B79492]/40">
+                        <p class="text-base text-[#B79492] font-semibold">0费用启动</p>
+                    </div>
+                    <div class="bg-[#B79492]/20 px-6 py-3 rounded-lg border border-[#B79492]/40">
+                        <p class="text-base text-[#B79492] font-semibold">Powered by Kimi-K2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2: Table of Contents -->
+    <div class="ppt-slide" type="table_of_contents">
+        <div class="h-full flex flex-col">
+            <div class="mb-8">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">CONTENTS</p>
+                <h2 class="text-5xl font-bold text-[#F7FAFC]">目录</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-4"></div>
+            </div>
+            
+            <div class="flex-1 grid grid-cols-2 gap-x-8 gap-y-6">
+                <div class="bg-[#4A5568]/20 p-6 rounded-lg border-l-4 border-[#B79492] hover:bg-[#4A5568]/30 transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 rounded-full bg-[#B79492]/20 flex items-center justify-center flex-shrink-0">
+                            <span class="text-3xl font-bold text-[#B79492]">01</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-[#F7FAFC] mb-2">市场机遇与趋势分析</h3>
+                            <p class="text-base text-[#A0AEC0] leading-relaxed">全球支付网关市场爆发式增长，支付编排平台战略价值凸显</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-6 rounded-lg border-l-4 border-[#B79492] hover:bg-[#4A5568]/30 transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 rounded-full bg-[#B79492]/20 flex items-center justify-center flex-shrink-0">
+                            <span class="text-3xl font-bold text-[#B79492]">02</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-[#F7FAFC] mb-2">SwirePay 平台解决方案</h3>
+                            <p class="text-base text-[#A0AEC0] leading-relaxed">一体化支付编排与对账平台，赋能企业数字化金融运营</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-6 rounded-lg border-l-4 border-[#B79492] hover:bg-[#4A5568]/30 transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 rounded-full bg-[#B79492]/20 flex items-center justify-center flex-shrink-0">
+                            <span class="text-3xl font-bold text-[#B79492]">03</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-[#F7FAFC] mb-2">技术架构与核心能力</h3>
+                            <p class="text-base text-[#A0AEC0] leading-relaxed">开发者友好的API设计，企业级的安全与合规标准</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-6 rounded-lg border-l-4 border-[#B79492] hover:bg-[#4A5568]/30 transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 rounded-full bg-[#B79492]/20 flex items-center justify-center flex-shrink-0">
+                            <span class="text-3xl font-bold text-[#B79492]">04</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-[#F7FAFC] mb-2">商业应用场景</h3>
+                            <p class="text-base text-[#A0AEC0] leading-relaxed">面向多行业的支付解决方案，服务全球企业数字化转型</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-6 rounded-lg border-l-4 border-[#B79492] hover:bg-[#4A5568]/30 transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 rounded-full bg-[#B79492]/20 flex items-center justify-center flex-shrink-0">
+                            <span class="text-3xl font-bold text-[#B79492]">05</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-[#F7FAFC] mb-2">项目交付计划</h3>
+                            <p class="text-base text-[#A0AEC0] leading-relaxed">3天快速交付官网1:1复刻与后台Demo，0费用启动</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-6 rounded-lg border-l-4 border-[#B79492] hover:bg-[#4A5568]/30 transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 rounded-full bg-[#B79492]/20 flex items-center justify-center flex-shrink-0">
+                            <span class="text-3xl font-bold text-[#B79492]">06</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-[#F7FAFC] mb-2">公司资质与合规</h3>
+                            <p class="text-base text-[#A0AEC0] leading-relaxed">双国公司架构，全球化合规运营</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: Chapter 1 -->
+    <div class="ppt-slide" type="chapter">
+        <img src="chapter1_market.png" alt="Chapter 1 Background" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1A202C]/90 via-[#1A202C]/80 to-[#1A202C]/95"></div>
+        <div class="relative h-full flex flex-col justify-center items-center text-center">
+            <div class="mb-6">
+                <div class="inline-block px-8 py-3 bg-[#B79492]/20 rounded-full border-2 border-[#B79492]">
+                    <span class="text-3xl font-bold text-[#B79492]">01</span>
+                </div>
+            </div>
+            <h2 class="text-7xl font-bold text-[#F7FAFC] mb-6 leading-tight">市场机遇与趋势分析</h2>
+            <div class="h-1 w-48 bg-[#B79492] mb-8"></div>
+            <p class="text-2xl text-[#A0AEC0] max-w-4xl leading-relaxed">全球支付网关市场的爆发式增长与支付编排平台的战略价值</p>
+        </div>
+    </div>
+
+    <!-- Slide 4: Global Payment Gateway Market Growth -->
+    <div class="ppt-slide" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-6">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">MARKET OVERVIEW</p>
+                <h2 class="text-4xl font-bold text-[#F7FAFC]">全球支付网关市场爆发式增长</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-6">
+                <div class="w-3/5">
+                    <div id="market-growth-chart" style="width: 100%; height: 100%;"></div>
+                </div>
+
+                <div class="w-2/5 flex flex-col gap-4">
+                    <div class="bg-[#B79492]/10 p-6 rounded-lg border-l-4 border-[#B79492]">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-chart-line text-2xl text-[#B79492]"></i>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">市场规模预测</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-base text-[#A0AEC0]">2024年</span>
+                                <span class="text-2xl font-bold text-[#F7FAFC]">267亿美元</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-base text-[#A0AEC0]">2030年</span>
+                                <span class="text-2xl font-bold text-[#B79492]">1463亿美元</span>
+                            </div>
+                            <div class="pt-3 border-t border-[#4A5568]">
+                                <p class="text-base text-[#F7FAFC]"><strong>年复合增长率</strong></p>
+                                <p class="text-3xl font-bold text-[#B79492] mt-1">22.79%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 grid grid-cols-1 gap-4">
+                        <div class="bg-[#4A5568]/20 p-4 rounded-lg flex items-center gap-3">
+                            <i class="fas fa-shopping-cart text-xl text-[#B79492]"></i>
+                            <div>
+                                <p class="text-base font-semibold text-[#F7FAFC]">电子商务爆发</p>
+                                <p class="text-sm text-[#A0AEC0]">2024年美国电商达1.192万亿美元</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#4A5568]/20 p-4 rounded-lg flex items-center gap-3">
+                            <i class="fas fa-mobile-alt text-xl text-[#B79492]"></i>
+                            <div>
+                                <p class="text-base font-semibold text-[#F7FAFC]">移动支付普及</p>
+                                <p class="text-sm text-[#A0AEC0]">全球66%成年人使用数字支付</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#4A5568]/20 p-4 rounded-lg flex items-center gap-3">
+                            <i class="fas fa-bolt text-xl text-[#B79492]"></i>
+                            <div>
+                                <p class="text-base font-semibold text-[#F7FAFC]">实时支付需求</p>
+                                <p class="text-sm text-[#A0AEC0]">37%商户已接入实时支付</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var marketChart = echarts.init(document.getElementById('market-growth-chart'));
+        var marketOption = {
+            backgroundColor: 'transparent',
+            title: {
+                text: '全球支付网关市场规模预测',
+                textStyle: {
+                    color: '#F7FAFC',
+                    fontSize: 22,
+                    fontWeight: 'bold',
+                    fontFamily: 'Chiron Hei HK'
+                },
+                left: 'center',
+                top: 20
+            },
+            tooltip: {
+                trigger: 'axis',
+                backgroundColor: '#4A5568',
+                borderColor: '#B79492',
+                textStyle: {
+                    color: '#F7FAFC',
+                    fontSize: 14
+                },
+                formatter: function(params) {
+                    return params[0].axisValue + '<br/>' +
+                           params[0].marker + ' ' + params[0].seriesName + ': ' + params[0].value + '亿美元';
+                }
+            },
+            legend: {
+                data: ['市场规模'],
+                top: 60,
+                textStyle: {
+                    color: '#A0AEC0',
+                    fontSize: 14
+                }
+            },
+            grid: {
+                left: '8%',
+                right: '5%',
+                bottom: '12%',
+                top: '22%',
+                containLabel: true
+            },
+            xAxis: {
+                type: 'category',
+                data: ['2024', '2025', '2026', '2027', '2028', '2029', '2030'],
+                axisLine: {
+                    lineStyle: {
+                        color: '#4A5568'
+                    }
+                },
+                axisLabel: {
+                    color: '#A0AEC0',
+                    fontSize: 14,
+                    fontFamily: 'Quattrocento Sans'
+                }
+            },
+            yAxis: {
+                type: 'value',
+                name: '市场规模(亿美元)',
+                nameTextStyle: {
+                    color: '#A0AEC0',
+                    fontSize: 14,
+                    padding: [0, 0, 0, -10]
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: '#4A5568'
+                    }
+                },
+                axisLabel: {
+                    color: '#A0AEC0',
+                    fontSize: 14,
+                    formatter: '{value}'
+                },
+                splitLine: {
+                    lineStyle: {
+                        color: '#4A5568',
+                        type: 'dashed'
+                    }
+                }
+            },
+            series: [
+                {
+                    name: '市场规模',
+                    type: 'line',
+                    data: [267, 524, 643, 790, 970, 1193, 1463],
+                    smooth: true,
+                    lineStyle: {
+                        color: '#B79492',
+                        width: 4
+                    },
+                    itemStyle: {
+                        color: '#B79492',
+                        borderWidth: 3,
+                        borderColor: '#F7FAFC'
+                    },
+                    areaStyle: {
+                        color: {
+                            type: 'linear',
+                            x: 0,
+                            y: 0,
+                            x2: 0,
+                            y2: 1,
+                            colorStops: [
+                                { offset: 0, color: 'rgba(183, 148, 146, 0.3)' },
+                                { offset: 1, color: 'rgba(183, 148, 146, 0.05)' }
+                            ]
+                        }
+                    },
+                    label: {
+                        show: true,
+                        position: 'top',
+                        color: '#F7FAFC',
+                        fontSize: 13,
+                        fontWeight: 'bold',
+                        formatter: '{c}'
+                    }
+                }
+            ]
+        };
+        marketChart.setOption(marketOption);
+        window.addEventListener('resize', function() {
+            marketChart.resize();
+        });
+    </script>
+
+    <!-- Slide 5: Payment Orchestration Platform -->
+    <div class="ppt-slide" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-6">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">PAYMENT ORCHESTRATION</p>
+                <h2 class="text-4xl font-bold text-[#F7FAFC]">支付编排平台：下一代支付基础设施</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-5">
+                <div class="w-1/2">
+                    <div id="orchestration-chart" style="width: 100%; height: 100%;"></div>
+                </div>
+
+                <div class="w-1/2 space-y-4">
+                    <div class="bg-[#B79492]/10 p-5 rounded-lg border border-[#B79492]/30">
+                        <h3 class="text-xl font-bold text-[#F7FAFC] mb-4">市场增长预测</h3>
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="flex-1">
+                                <p class="text-sm text-[#A0AEC0] mb-1">2025年市场规模</p>
+                                <p class="text-3xl font-bold text-[#F7FAFC]">30亿美元</p>
+                            </div>
+                            <div class="w-px h-12 bg-[#4A5568]"></div>
+                            <div class="flex-1">
+                                <p class="text-sm text-[#A0AEC0] mb-1">2032年预测规模</p>
+                                <p class="text-3xl font-bold text-[#B79492]">94亿美元</p>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-[#4A5568]">
+                            <p class="text-base text-[#A0AEC0]">年复合增长率</p>
+                            <p class="text-4xl font-bold text-[#B79492]">17.8%</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <div class="bg-[#4A5568]/20 p-4 rounded-lg">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fas fa-globe text-lg text-[#B79492]"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC]">全球扩展能力</p>
+                            </div>
+                            <p class="text-sm text-[#A0AEC0] leading-relaxed">统一接入本地和国际支付方式，自动处理区域合规要求</p>
+                        </div>
+
+                        <div class="bg-[#4A5568]/20 p-4 rounded-lg">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fas fa-chart-line text-lg text-[#B79492]"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC]">支付成功率优化</p>
+                            </div>
+                            <p class="text-sm text-[#A0AEC0] leading-relaxed">智能路由选择最佳支付服务商，实时切换避免交易失败</p>
+                        </div>
+
+                        <div class="bg-[#4A5568]/20 p-4 rounded-lg">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fas fa-dollar-sign text-lg text-[#B79492]"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC]">成本优化</p>
+                            </div>
+                            <p class="text-sm text-[#A0AEC0] leading-relaxed">智能选择成本最低的支付渠道，降低交易费用和汇率损失</p>
+                        </div>
+
+                        <div class="bg-[#4A5568]/20 p-4 rounded-lg">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fas fa-user-shield text-lg text-[#B79492]"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC]">安全与合规</p>
+                            </div>
+                            <p class="text-sm text-[#A0AEC0] leading-relaxed">内置欺诈检测、加密传输，自动遵循PCI-DSS、PSD2等标准</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var orchChart = echarts.init(document.getElementById('orchestration-chart'));
+        var orchOption = {
+            backgroundColor: 'transparent',
+            title: {
+                text: '支付编排平台核心价值',
+                textStyle: {
+                    color: '#F7FAFC',
+                    fontSize: 22,
+                    fontWeight: 'bold',
+                    fontFamily: 'Chiron Hei HK'
+                },
+                left: 'center',
+                top: 20
+            },
+            tooltip: {
+                trigger: 'item',
+                backgroundColor: '#4A5568',
+                borderColor: '#B79492',
+                textStyle: {
+                    color: '#F7FAFC',
+                    fontSize: 14
+                },
+                formatter: '{b}: {c}%'
+            },
+            series: [
+                {
+                    type: 'sunburst',
+                    data: [
+                        {
+                            name: '支付编排平台',
+                            value: 100,
+                            itemStyle: { color: '#B79492' },
+                            children: [
+                                {
+                                    name: '全球扩展',
+                                    value: 25,
+                                    itemStyle: { color: '#B79492' },
+                                    children: [
+                                        { name: '多币种支持', value: 8, itemStyle: { color: '#B79492' } },
+                                        { name: '本地支付', value: 8, itemStyle: { color: '#B79492' } },
+                                        { name: '合规自动', value: 9, itemStyle: { color: '#B79492' } }
+                                    ]
+                                },
+                                {
+                                    name: '成功率优化',
+                                    value: 25,
+                                    itemStyle: { color: '#4A5568' },
+                                    children: [
+                                        { name: '智能路由', value: 10, itemStyle: { color: '#4A5568' } },
+                                        { name: '实时切换', value: 8, itemStyle: { color: '#4A5568' } },
+                                        { name: '故障转移', value: 7, itemStyle: { color: '#4A5568' } }
+                                    ]
+                                },
+                                {
+                                    name: '成本优化',
+                                    value: 25,
+                                    itemStyle: { color: '#A0AEC0' },
+                                    children: [
+                                        { name: '费率对比', value: 9, itemStyle: { color: '#A0AEC0' } },
+                                        { name: '汇率优化', value: 8, itemStyle: { color: '#A0AEC0' } },
+                                        { name: '批量处理', value: 8, itemStyle: { color: '#A0AEC0' } }
+                                    ]
+                                },
+                                {
+                                    name: '客户体验',
+                                    value: 25,
+                                    itemStyle: { color: '#718096' },
+                                    children: [
+                                        { name: '无缝支付', value: 9, itemStyle: { color: '#718096' } },
+                                        { name: '快速结算', value: 8, itemStyle: { color: '#718096' } },
+                                        { name: '统一视图', value: 8, itemStyle: { color: '#718096' } }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    radius: ['20%', '90%'],
+                    label: {
+                        rotate: 'radial',
+                        color: '#F7FAFC',
+                        fontSize: 13,
+                        fontWeight: 'bold',
+                        fontFamily: 'Quattrocento Sans'
+                    },
+                    itemStyle: {
+                        borderWidth: 2,
+                        borderColor: '#1A202C'
+                    },
+                    emphasis: {
+                        focus: 'ancestor',
+                        itemStyle: {
+                            shadowBlur: 10,
+                            shadowColor: 'rgba(183, 148, 146, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+        orchChart.setOption(orchOption);
+        window.addEventListener('resize', function() {
+            orchChart.resize();
+        });
+    </script>
+
+    <!-- Slide 6: Top 10 Payment Trends 2025 -->
+    <div class="ppt-slide" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-5">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">INDUSTRY TRENDS</p>
+                <h2 class="text-4xl font-bold text-[#F7FAFC]">2025年支付行业十大趋势</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-3"></div>
+            </div>
+
+            <div class="flex-1 grid grid-cols-3 gap-4">
+                <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-[#B79492]/30 flex items-center justify-center">
+                            <span class="text-lg font-bold text-[#B79492]">01</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#F7FAFC]">AI驱动欺诈检测</h3>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0] leading-relaxed">机器学习算法实时识别可疑交易，降低欺诈风险，提升支付安全性</p>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-5 rounded-lg border-l-4 border-[#4A5568]">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-[#4A5568]/50 flex items-center justify-center">
+                            <span class="text-lg font-bold text-[#F7FAFC]">02</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#F7FAFC]">实时支付普及</h3>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0] leading-relaxed">FedNow、RTP等即时支付系统快速增长，37%商户已支持实时支付</p>
+                </div>
+
+                <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-[#B79492]/30 flex items-center justify-center">
+                            <span class="text-lg font-bold text-[#B79492]">03</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#F7FAFC]">开放银行与开放金融</h3>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0] leading-relaxed">金融数据无缝交换，推动个性化金融服务和创新支付体验发展</p>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-5 rounded-lg border-l-4 border-[#4A5568]">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-[#4A5568]/50 flex items-center justify-center">
+                            <span class="text-lg font-bold text-[#F7FAFC]">04</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#F7FAFC]">嵌入式金融</h3>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0] leading-relaxed">支付能力深度集成到各类软件平台，Shopify、Intuit等提供白标支付</p>
+                </div>
+
+                <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-[#B79492]/30 flex items-center justify-center">
+                            <span class="text-lg font-bold text-[#B79492]">05</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#F7FAFC]">跨境支付创新</h3>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0] leading-relaxed">多领土即时支付走廊建设，预计2027年全球跨境支付超250万亿美元</p>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-5 rounded-lg border-l-4 border-[#4A5568]">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-[#4A5568]/50 flex items-center justify-center">
+                            <span class="text-lg font-bold text-[#F7FAFC]">06</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#F7FAFC]">数字钱包扩张</h3>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0] leading-relaxed">Apple Pay、Google Pay等移动支付持续增长，非现金支付增长7.4%</p>
+                </div>
+
+                <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-[#B79492]/30 flex items-center justify-center">
+                            <span class="text-lg font-bold text-[#B79492]">07</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#F7FAFC]">加密货币支付</h3>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0] leading-relaxed">41%商户已部署加密货币支付，稳定币降低波动性风险</p>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-5 rounded-lg border-l-4 border-[#4A5568]">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-[#4A5568]/50 flex items-center justify-center">
+                            <span class="text-lg font-bold text-[#F7FAFC]">08</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#F7FAFC]">去中心化身份</h3>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0] leading-relaxed">DID技术保护用户身份隐私，80%全球消费者曾遭遇诈骗企图</p>
+                </div>
+
+                <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-[#B79492]/30 flex items-center justify-center">
+                            <span class="text-lg font-bold text-[#B79492]">09</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#F7FAFC]">BNPL增长</h3>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0] leading-relaxed">先买后付服务持续扩张，44%商户已部署BNPL选项</p>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-5 rounded-lg border-l-4 border-[#4A5568]">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-[#4A5568]/50 flex items-center justify-center">
+                            <span class="text-lg font-bold text-[#F7FAFC]">10</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#F7FAFC]">数据变现</h3>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0] leading-relaxed">支付数据驱动个性化金融产品，开放银行允许数据持有者合法获利</p>
+                </div>
+            </div>
+
+            <div class="mt-4 bg-[#B79492]/10 p-4 rounded-lg border border-[#B79492]/30">
+                <p class="text-base text-[#F7FAFC] leading-relaxed"><i class="fas fa-lightbulb text-[#B79492] mr-2"></i><strong>核心洞察：</strong>支付行业正经历技术驱动的深刻变革，AI、实时支付、开放银行成为三大核心驱动力，为支付编排平台创造巨大市场机遇</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7: Chapter 2 -->
+    <div class="ppt-slide" type="chapter">
+        <img src="chapter2_platform.png" alt="Chapter 2 Background" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1A202C]/90 via-[#1A202C]/80 to-[#1A202C]/95"></div>
+        <div class="relative h-full flex flex-col justify-center items-center text-center">
+            <div class="mb-6">
+                <div class="inline-block px-8 py-3 bg-[#B79492]/20 rounded-full border-2 border-[#B79492]">
+                    <span class="text-3xl font-bold text-[#B79492]">02</span>
+                </div>
+            </div>
+            <h2 class="text-7xl font-bold text-[#F7FAFC] mb-6 leading-tight">SwirePay 平台解决方案</h2>
+            <div class="h-1 w-48 bg-[#B79492] mb-8"></div>
+            <p class="text-2xl text-[#A0AEC0] max-w-4xl leading-relaxed">一体化支付编排与对账平台，赋能企业数字化金融运营</p>
+        </div>
+    </div>
+
+    <!-- Slide 8: SwirePay Platform Overview -->
+    <div class="ppt-slide" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-4">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">PLATFORM OVERVIEW</p>
+                <h2 class="text-4xl font-bold text-[#F7FAFC]">SwirePay：重新定义资金流动</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-6">
+                <div class="w-2/5 flex flex-col gap-4">
+                    <div class="bg-[#B79492]/10 p-6 rounded-lg border-l-4 border-[#B79492]">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-quote-left text-2xl text-[#B79492]"></i>
+                            <h3 class="text-2xl font-bold text-[#F7FAFC]">核心理念</h3>
+                        </div>
+                        <p class="text-xl text-[#F7FAFC] font-semibold mb-3">Funds Movement Reimagined</p>
+                        <p class="text-base text-[#A0AEC0] leading-relaxed mb-4">资金流动重新定义者。SwirePay通过统一的支付编排平台，打破传统支付壁垒，实现收款、付款、对账的全流程自动化管理</p>
+                        <div class="flex gap-3">
+                            <div class="flex-1 bg-[#4A5568]/30 p-3 rounded text-center">
+                                <p class="text-2xl font-bold text-[#B79492]">100+</p>
+                                <p class="text-sm text-[#A0AEC0]">支付方式</p>
+                            </div>
+                            <div class="flex-1 bg-[#4A5568]/30 p-3 rounded text-center">
+                                <p class="text-2xl font-bold text-[#B79492]">24/7</p>
+                                <p class="text-sm text-[#A0AEC0]">全天候服务</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 bg-[#4A5568]/20 p-5 rounded-lg">
+                        <h3 class="text-lg font-bold text-[#F7FAFC] mb-4">平台优势</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-check-circle text-lg text-[#B79492]"></i>
+                                <p class="text-base text-[#A0AEC0]">低代码API快速集成</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-check-circle text-lg text-[#B79492]"></i>
+                                <p class="text-base text-[#A0AEC0]">AI驱动的智能对账</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-check-circle text-lg text-[#B79492]"></i>
+                                <p class="text-base text-[#A0AEC0]">企业级安全合规</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-check-circle text-lg text-[#B79492]"></i>
+                                <p class="text-base text-[#A0AEC0]">实时数据分析洞察</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-3/5">
+                    <div class="h-full bg-[#4A5568]/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-[#F7FAFC] mb-5 flex items-center gap-3">
+                            <i class="fas fa-sitemap text-[#B79492]"></i>
+                            平台功能架构
+                        </h3>
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="text-center">
+                                <div class="w-20 h-20 rounded-full bg-[#B79492]/20 flex items-center justify-center mx-auto mb-3">
+                                    <i class="fas fa-arrow-down text-3xl text-[#B79492]"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-[#F7FAFC] mb-2">收款管理</h4>
+                                <p class="text-sm text-[#A0AEC0] leading-relaxed">POS与在线支付全渠道接入，支持信用卡、ACH、数字钱包等多种支付方式</p>
+                            </div>
+
+                            <div class="text-center">
+                                <div class="w-20 h-20 rounded-full bg-[#B79492]/20 flex items-center justify-center mx-auto mb-3">
+                                    <i class="fas fa-arrow-up text-3xl text-[#B79492]"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-[#F7FAFC] mb-2">付款管理</h4>
+                                <p class="text-sm text-[#A0AEC0] leading-relaxed">员工报销、供应商付款自动化，支持批量付款和定时付款功能</p>
+                            </div>
+
+                            <div class="text-center">
+                                <div class="w-20 h-20 rounded-full bg-[#B79492]/20 flex items-center justify-center mx-auto mb-3">
+                                    <i class="fas fa-sync-alt text-3xl text-[#B79492]"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-[#F7FAFC] mb-2">智能对账</h4>
+                                <p class="text-sm text-[#A0AEC0] leading-relaxed">RaaS服务自动匹配多渠道交易，AI算法识别异常，生成合规报表</p>
+                            </div>
+
+                            <div class="text-center">
+                                <div class="w-20 h-20 rounded-full bg-[#B79492]/20 flex items-center justify-center mx-auto mb-3">
+                                    <i class="fas fa-chart-bar text-3xl text-[#B79492]"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-[#F7FAFC] mb-2">数据分析</h4>
+                                <p class="text-sm text-[#A0AEC0] leading-relaxed">可定制MIS仪表板，实时交易洞察，预测性分析和异常检测</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-5 border-t border-[#4A5568]">
+                            <div class="flex items-center justify-around">
+                                <div class="text-center">
+                                    <p class="text-sm text-[#A0AEC0] mb-1">支持渠道</p>
+                                    <p class="text-2xl font-bold text-[#B79492]">POS + Online</p>
+                                </div>
+                                <div class="w-px h-12 bg-[#4A5568]"></div>
+                                <div class="text-center">
+                                    <p class="text-sm text-[#A0AEC0] mb-1">集成方式</p>
+                                    <p class="text-2xl font-bold text-[#B79492]">API + ERP</p>
+                                </div>
+                                <div class="w-px h-12 bg-[#4A5568]"></div>
+                                <div class="text-center">
+                                    <p class="text-sm text-[#A0AEC0] mb-1">部署选项</p>
+                                    <p class="text-2xl font-bold text-[#B79492]">云 + 本地</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 9: Core Function Modules -->
+    <div class="ppt-slide" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-5">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">CORE MODULES</p>
+                <h2 class="text-4xl font-bold text-[#F7FAFC]">核心功能模块</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-3"></div>
+            </div>
+
+            <div class="flex-1 grid grid-cols-2 gap-5">
+                <div class="bg-[#B79492]/10 p-6 rounded-lg border-l-4 border-[#B79492]">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-16 h-16 rounded-full bg-[#B79492]/30 flex items-center justify-center">
+                            <i class="fas fa-file-invoice-dollar text-3xl text-[#B79492]"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-[#F7FAFC]">应收账款管理</h3>
+                            <p class="text-sm text-[#A0AEC0]">Accounts Receivable</p>
+                        </div>
+                    </div>
+                    <p class="text-base text-[#F7FAFC] mb-4 leading-relaxed">集成机器学习平台，数字化销售点收款流程，无缝处理在线支付</p>
+                    <div class="space-y-2">
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">POS现金和支票收款数字化</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">在线支付网关集成</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">自动化收款确认和提醒</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">客户付款行为分析</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-6 rounded-lg border-l-4 border-[#4A5568]">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-16 h-16 rounded-full bg-[#4A5568]/50 flex items-center justify-center">
+                            <i class="fas fa-hand-holding-usd text-3xl text-[#B79492]"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-[#F7FAFC]">应付账款管理</h3>
+                            <p class="text-sm text-[#A0AEC0]">Accounts Payable</p>
+                        </div>
+                    </div>
+                    <p class="text-base text-[#F7FAFC] mb-4 leading-relaxed">深度学习引擎驱动，智能匹配最佳融资方案，确保营运资金充足</p>
+                    <div class="space-y-2">
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">采购订单和发票融资</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">贷方市场智能匹配</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">营运资金优化建议</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">自动化付款审批流程</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-6 rounded-lg border-l-4 border-[#4A5568]">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-16 h-16 rounded-full bg-[#4A5568]/50 flex items-center justify-center">
+                            <i class="fas fa-tags text-3xl text-[#B79492]"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-[#F7FAFC]">费用智能分类</h3>
+                            <p class="text-sm text-[#A0AEC0]">Categorizing Expenses</p>
+                        </div>
+                    </div>
+                    <p class="text-base text-[#F7FAFC] mb-4 leading-relaxed">内建算法自动分类费用，支持多种支付方式，简化财务核算</p>
+                    <div class="space-y-2">
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">卡片、数字支票、账户转账</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">AI自动费用分类和标记</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">自定义费用类别和规则</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">与会计系统无缝同步</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#B79492]/10 p-6 rounded-lg border-l-4 border-[#B79492]">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-16 h-16 rounded-full bg-[#B79492]/30 flex items-center justify-center">
+                            <i class="fas fa-plug text-3xl text-[#B79492]"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-[#F7FAFC]">即插即用集成</h3>
+                            <p class="text-sm text-[#A0AEC0]">Plug-and-Play</p>
+                        </div>
+                    </div>
+                    <p class="text-base text-[#F7FAFC] mb-4 leading-relaxed">零开发时间集成会计信息，支持云端和内网安全部署</p>
+                    <div class="space-y-2">
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">ERP、云端、混合环境支持</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">QuickBooks等第三方集成</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">S2S回调实时交易更新</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">自定义报表和数据分析</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 bg-[#B79492]/10 p-4 rounded-lg border border-[#B79492]/30">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-robot text-xl text-[#B79492]"></i>
+                        <p class="text-base text-[#F7FAFC]"><strong>AI驱动：</strong>深度学习算法优化收款、融资和对账流程</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-center">
+                            <p class="text-xs text-[#A0AEC0]">处理速度</p>
+                            <p class="text-lg font-bold text-[#B79492]">~30秒</p>
+                        </div>
+                        <div class="w-px bg-[#4A5568]"></div>
+                        <div class="text-center">
+                            <p class="text-xs text-[#A0AEC0]">集成时间</p>
+                            <p class="text-lg font-bold text-[#B79492]">秒级</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 10: Supported Payment Methods -->
+    <div class="ppt-slide" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-4">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">PAYMENT METHODS</p>
+                <h2 class="text-4xl font-bold text-[#F7FAFC]">支持的支付方式与渠道</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-6">
+                <div class="w-3/5">
+                    <div class="h-full bg-[#4A5568]/20 p-5 rounded-lg">
+                        <h3 class="text-xl font-bold text-[#F7FAFC] mb-4 flex items-center gap-3">
+                            <i class="fas fa-credit-card text-[#B79492]"></i>
+                            主要支付方式
+                        </h3>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="bg-[#B79492]/10 p-4 rounded-lg text-center hover:bg-[#B79492]/20 transition-all">
+                                <i class="fas fa-credit-card text-3xl text-[#B79492] mb-2"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">信用卡支付</p>
+                                <p class="text-xs text-[#A0AEC0]">Visa, MasterCard, Amex</p>
+                            </div>
+
+                            <div class="bg-[#B79492]/10 p-4 rounded-lg text-center hover:bg-[#B79492]/20 transition-all">
+                                <i class="fas fa-university text-3xl text-[#B79492] mb-2"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">ACH转账</p>
+                                <p class="text-xs text-[#A0AEC0]">银行转账, eCheck</p>
+                            </div>
+
+                            <div class="bg-[#B79492]/10 p-4 rounded-lg text-center hover:bg-[#B79492]/20 transition-all">
+                                <i class="fas fa-bolt text-3xl text-[#B79492] mb-2"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">实时支付</p>
+                                <p class="text-xs text-[#A0AEC0]">RTP, FedNow</p>
+                            </div>
+
+                            <div class="bg-[#4A5568]/30 p-4 rounded-lg text-center hover:bg-[#4A5568]/40 transition-all">
+                                <i class="fab fa-apple-pay text-3xl text-[#B79492] mb-2"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">数字钱包</p>
+                                <p class="text-xs text-[#A0AEC0]">Apple Pay, Google Pay</p>
+                            </div>
+
+                            <div class="bg-[#4A5568]/30 p-4 rounded-lg text-center hover:bg-[#4A5568]/40 transition-all">
+                                <i class="fas fa-mobile-alt text-3xl text-[#B79492] mb-2"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">Zelle转账</p>
+                                <p class="text-xs text-[#A0AEC0]">P2P快速转账</p>
+                            </div>
+
+                            <div class="bg-[#4A5568]/30 p-4 rounded-lg text-center hover:bg-[#4A5568]/40 transition-all">
+                                <i class="fab fa-bitcoin text-3xl text-[#B79492] mb-2"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">加密货币</p>
+                                <p class="text-xs text-[#A0AEC0]">Bitcoin, USDT</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 pt-4 border-t border-[#4A5568]">
+                            <div class="flex items-center justify-around">
+                                <div class="text-center">
+                                    <p class="text-sm text-[#A0AEC0] mb-1">支持货币</p>
+                                    <p class="text-xl font-bold text-[#B79492]">USD, CAD, INR</p>
+                                </div>
+                                <div class="w-px h-12 bg-[#4A5568]"></div>
+                                <div class="text-center">
+                                    <p class="text-sm text-[#A0AEC0] mb-1">交易限额</p>
+                                    <p class="text-xl font-bold text-[#B79492]">灵活配置</p>
+                                </div>
+                                <div class="w-px h-12 bg-[#4A5568]"></div>
+                                <div class="text-center">
+                                    <p class="text-sm text-[#A0AEC0] mb-1">结算周期</p>
+                                    <p class="text-xl font-bold text-[#B79492]">T+0 / T+1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-2/5 flex flex-col gap-4">
+                    <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-globe text-2xl text-[#B79492]"></i>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">全渠道覆盖</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-desktop text-lg text-[#B79492]"></i>
+                                <div>
+                                    <p class="text-base font-semibold text-[#F7FAFC]">在线支付</p>
+                                    <p class="text-sm text-[#A0AEC0]">网站、App内支付</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-cash-register text-lg text-[#B79492]"></i>
+                                <div>
+                                    <p class="text-base font-semibold text-[#F7FAFC]">POS支付</p>
+                                    <p class="text-sm text-[#A0AEC0]">实体店、线下收款</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-mobile text-lg text-[#B79492]"></i>
+                                <div>
+                                    <p class="text-base font-semibold text-[#F7FAFC]">移动支付</p>
+                                    <p class="text-sm text-[#A0AEC0]">扫码、NFC、in-app</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 bg-[#4A5568]/20 p-5 rounded-lg">
+                        <h3 class="text-lg font-bold text-[#F7FAFC] mb-4">支付安全特性</h3>
+                        <div class="space-y-3">
+                            <div class="bg-[#B79492]/10 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">PCI DSS Level 1</p>
+                                <p class="text-sm text-[#A0AEC0]">最高级别支付安全认证</p>
+                            </div>
+                            <div class="bg-[#B79492]/10 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">TLS 1.3加密</p>
+                                <p class="text-sm text-[#A0AEC0]">端到端数据传输保护</p>
+                            </div>
+                            <div class="bg-[#B79492]/10 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">3D Secure 2.0</p>
+                                <p class="text-sm text-[#A0AEC0]">强客户身份验证</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 bg-[#B79492]/10 p-3 rounded-lg border border-[#B79492]/30">
+                <p class="text-base text-[#F7FAFC]"><i class="fas fa-info-circle text-[#B79492] mr-2"></i><strong>100+种支付方式</strong> - 覆盖全球主要支付渠道，满足不同市场和客户群体的支付偏好</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 11: Chapter 3 -->
+    <div class="ppt-slide" type="chapter">
+        <img src="chapter3_tech.png" alt="Chapter 3 Background" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1A202C]/90 via-[#1A202C]/80 to-[#1A202C]/95"></div>
+        <div class="relative h-full flex flex-col justify-center items-center text-center">
+            <div class="mb-6">
+                <div class="inline-block px-8 py-3 bg-[#B79492]/20 rounded-full border-2 border-[#B79492]">
+                    <span class="text-3xl font-bold text-[#B79492]">03</span>
+                </div>
+            </div>
+            <h2 class="text-7xl font-bold text-[#F7FAFC] mb-6 leading-tight">技术架构与核心能力</h2>
+            <div class="h-1 w-48 bg-[#B79492] mb-8"></div>
+            <p class="text-2xl text-[#A0AEC0] max-w-4xl leading-relaxed">开发者友好的API设计，企业级的安全与合规标准</p>
+        </div>
+    </div>
+
+    <!-- Slide 12: API-First Integration Architecture -->
+    <div class="ppt-slide" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-4">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">API ARCHITECTURE</p>
+                <h2 class="text-4xl font-bold text-[#F7FAFC]">API优先的集成架构</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-5">
+                <div class="w-3/5 bg-[#4A5568]/20 p-5 rounded-lg">
+                    <h3 class="text-lg font-bold text-[#F7FAFC] mb-3 flex items-center gap-2">
+                        <i class="fas fa-code text-[#B79492]"></i>
+                        集成代码示例
+                    </h3>
+                    <div class="bg-[#1A202C]/80 p-4 rounded-lg border border-[#B79492]/30 font-mono text-sm">
+                        <div class="text-[#A0AEC0] mb-2">// JavaScript前端集成示例</div>
+                        <div class="text-[#F7FAFC] mb-1">&lt;<span class="text-[#B79492]">script</span> <span class="text-[#A0AEC0]">src</span>=<span class="text-[#B79492]">"https://checkout.swirepay.com/checkout.js"</span>&gt;&lt;/<span class="text-[#B79492]">script</span>&gt;</div>
+                        <div class="text-[#F7FAFC] mb-2">&lt;<span class="text-[#B79492]">button</span> <span class="text-[#A0AEC0]">onclick</span>=<span class="text-[#B79492]">"pay()"</span>&gt;支付 $500&lt;/<span class="text-[#B79492]">button</span>&gt;</div>
+                        <div class="text-[#A0AEC0] mb-2">// 调用支付函数</div>
+                        <div class="text-[#F7FAFC]"><span class="text-[#A0AEC0]">function</span> <span class="text-[#B79492]">pay</span>() {</div>
+                        <div class="text-[#F7FAFC] ml-4"><span class="text-[#B79492]">window.pay</span>({</div>
+                        <div class="text-[#A0AEC0] ml-8"><span class="text-[#F7FAFC]">amount</span>: <span class="text-[#B79492]">50000</span>, <span class="text-[#A0AEC0]">// 美分单位</span></div>
+                        <div class="text-[#A0AEC0] ml-8"><span class="text-[#F7FAFC]">currency</span>: <span class="text-[#B79492]">'USD'</span>,</div>
+                        <div class="text-[#A0AEC0] ml-8"><span class="text-[#F7FAFC]">description</span>: <span class="text-[#B79492]">'测试支付'</span>,</div>
+                        <div class="text-[#A0AEC0] ml-8"><span class="text-[#F7FAFC]">redirectTo</span>: <span class="text-[#B79492]">'https://swirepay.com'</span></div>
+                        <div class="text-[#F7FAFC] ml-4">});</div>
+                        <div class="text-[#F7FAFC]">}</div>
+                    </div>
+
+                    <div class="mt-4 bg-[#B79492]/10 p-4 rounded-lg">
+                        <h4 class="text-base font-bold text-[#F7FAFC] mb-2">后端集成 (Node.js)</h4>
+                        <div class="bg-[#1A202C]/80 p-3 rounded font-mono text-xs">
+                            <div class="text-[#A0AEC0]">// 组装JSON数据并跳转</div>
+                            <div class="text-[#F7FAFC]"><span class="text-[#A0AEC0]">const</span> <span class="text-[#B79492]">data</span> = { <span class="text-[#A0AEC0]">currencyCode</span>: <span class="text-[#B79492]">'USD'</span>, <span class="text-[#A0AEC0]">amount</span>: <span class="text-[#B79492]">50000</span>, <span class="text-[#A0AEC0]">test</span>: <span class="text-[#B79492]">true</span> };</div>
+                            <div class="text-[#F7FAFC]"><span class="text-[#B79492]">res.redirect</span>(<span class="text-[#B79492]">'https://secure.swirepay.com/?data='</span> + payload);</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-2/5 flex flex-col gap-3">
+                    <div class="bg-[#B79492]/10 p-4 rounded-lg border-l-4 border-[#B79492]">
+                        <h3 class="text-lg font-bold text-[#F7FAFC] mb-3">技术特性</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-bolt text-xl text-[#B79492] mt-1"></i>
+                                <div>
+                                    <p class="text-base font-semibold text-[#F7FAFC]">低代码API</p>
+                                    <p class="text-sm text-[#A0AEC0]">30秒完成支付集成</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-sync text-xl text-[#B79492] mt-1"></i>
+                                <div>
+                                    <p class="text-base font-semibold text-[#F7FAFC]">实时回调</p>
+                                    <p class="text-sm text-[#A0AEC0]">S2S安全交易更新</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-code text-xl text-[#B79492] mt-1"></i>
+                                <div>
+                                    <p class="text-base font-semibold text-[#F7FAFC]">多语言SDK</p>
+                                    <p class="text-sm text-[#A0AEC0]">Node.js, Python, Java</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-cloud text-xl text-[#B79492] mt-1"></i>
+                                <div>
+                                    <p class="text-base font-semibold text-[#F7FAFC]">云端部署</p>
+                                    <p class="text-sm text-[#A0AEC0]">自动扩展，高可用</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 bg-[#4A5568]/20 p-4 rounded-lg">
+                        <h3 class="text-lg font-bold text-[#F7FAFC] mb-3">集成优势</h3>
+                        <div class="space-y-2">
+                            <div class="bg-[#B79492]/10 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">零开发时间</p>
+                                <p class="text-sm text-[#A0AEC0]">预置集成模板，即插即用</p>
+                            </div>
+                            <div class="bg-[#B79492]/10 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">全面文档</p>
+                                <p class="text-sm text-[#A0AEC0]">详细API文档和示例代码</p>
+                            </div>
+                            <div class="bg-[#B79492]/10 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">技术支持</p>
+                                <p class="text-sm text-[#A0AEC0]">7×24小时技术支持服务</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#B79492]/10 p-3 rounded-lg border border-[#B79492]/30">
+                        <p class="text-sm text-[#F7FAFC]"><i class="fas fa-shield-alt text-[#B79492] mr-2"></i><strong>安全保障：</strong>所有API调用均使用TLS 1.3加密，支持API密钥和OAuth 2.0认证</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 13: Enterprise Security & Compliance -->
+    <div class="ppt-slide" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-5">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">SECURITY & COMPLIANCE</p>
+                <h2 class="text-4xl font-bold text-[#F7FAFC]">企业级安全与合规</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-3"></div>
+            </div>
+
+            <div class="flex-1 grid grid-cols-2 gap-5">
+                <div class="flex flex-col gap-4">
+                    <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-shield-alt text-2xl text-[#B79492]"></i>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">安全认证与标准</h3>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="bg-[#4A5568]/30 p-3 rounded text-center">
+                                <i class="fas fa-certificate text-2xl text-[#B79492] mb-2"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC]">PCI DSS Level 1</p>
+                                <p class="text-xs text-[#A0AEC0] mt-1">支付行业最高安全标准</p>
+                            </div>
+                            <div class="bg-[#4A5568]/30 p-3 rounded text-center">
+                                <i class="fas fa-lock text-2xl text-[#B79492] mb-2"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC]">TLS 1.3加密</p>
+                                <p class="text-xs text-[#A0AEC0] mt-1">端到端数据传输保护</p>
+                            </div>
+                            <div class="bg-[#4A5568]/30 p-3 rounded text-center">
+                                <i class="fas fa-user-shield text-2xl text-[#B79492] mb-2"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC]">多因素认证</p>
+                                <p class="text-xs text-[#A0AEC0] mt-1">强化账户安全保护</p>
+                            </div>
+                            <div class="bg-[#4A5568]/30 p-3 rounded text-center">
+                                <i class="fas fa-key text-2xl text-[#B79492] mb-2"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC]">OAuth 2.0</p>
+                                <p class="text-xs text-[#A0AEC0] mt-1">安全的API认证授权</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 bg-[#4A5568]/20 p-5 rounded-lg">
+                        <h3 class="text-lg font-bold text-[#F7FAFC] mb-3 flex items-center gap-2">
+                            <i class="fas fa-user-secret text-[#B79492]"></i>
+                            反欺诈检测
+                        </h3>
+                        <div class="space-y-2">
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">实时交易监控和风险评分</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">机器学习异常行为检测</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">动态身份验证和3D Secure</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">黑名单和白名单管理</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">地理位置和设备指纹识别</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                    <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-globe-americas text-2xl text-[#B79492]"></i>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">全球合规标准</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between p-3 bg-[#4A5568]/30 rounded">
+                                <div class="flex items-center gap-3">
+                                    <i class="fas fa-flag text-[#B79492]"></i>
+                                    <p class="text-base font-semibold text-[#F7FAFC]">PSD2 (欧洲)</p>
+                                </div>
+                                <span class="text-xs text-[#A0AEC0]">支付服务指令</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-[#4A5568]/30 rounded">
+                                <div class="flex items-center gap-3">
+                                    <i class="fas fa-shield-alt text-[#B79492]"></i>
+                                    <p class="text-base font-semibold text-[#F7FAFC]">GDPR (欧盟)</p>
+                                </div>
+                                <span class="text-xs text-[#A0AEC0]">数据保护法规</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-[#4A5568]/30 rounded">
+                                <div class="flex items-center gap-3">
+                                    <i class="fas fa-university text-[#B79492]"></i>
+                                    <p class="text-base font-semibold text-[#F7FAFC]">KYC/AML</p>
+                                </div>
+                                <span class="text-xs text-[#A0AEC0]">反洗钱合规</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-[#4A5568]/30 rounded">
+                                <div class="flex items-center gap-3">
+                                    <i class="fas fa-certificate text-[#B79492]"></i>
+                                    <p class="text-base font-semibold text-[#F7FAFC]">ISO 27001</p>
+                                </div>
+                                <span class="text-xs text-[#A0AEC0]">信息安全管理</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 bg-[#4A5568]/20 p-5 rounded-lg">
+                        <h3 class="text-lg font-bold text-[#F7FAFC] mb-3 flex items-center gap-2">
+                            <i class="fas fa-database text-[#B79492]"></i>
+                            数据安全保护
+                        </h3>
+                        <div class="space-y-2">
+                            <div class="bg-[#B79492]/10 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">数据加密</p>
+                                <p class="text-sm text-[#A0AEC0]">静态和动态数据AES-256加密</p>
+                            </div>
+                            <div class="bg-[#B79492]/10 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">Tokenization</p>
+                                <p class="text-sm text-[#A0AEC0]">敏感数据令牌化处理</p>
+                            </div>
+                            <div class="bg-[#B79492]/10 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">访问控制</p>
+                                <p class="text-sm text-[#A0AEC0]">基于角色的权限管理</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 bg-[#B79492]/10 p-4 rounded-lg border border-[#B79492]/30">
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-award text-2xl text-[#B79492]"></i>
+                    <p class="text-base text-[#F7FAFC]"><strong>信任背书：</strong>SwirePay通过全球最严格的支付安全认证，服务BNY、ICICI Bank等顶级金融机构，处理千亿级交易量</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 14: Smart Reconciliation & Data Analytics -->
+    <div class="ppt-slide" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-4">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">RECONCILIATION & ANALYTICS</p>
+                <h2 class="text-4xl font-bold text-[#F7FAFC]">智能对账与数据分析</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-5">
+                <div class="w-1/2 flex flex-col gap-4">
+                    <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-sync-alt text-2xl text-[#B79492]"></i>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">RaaS对账服务</h3>
+                        </div>
+                        <p class="text-base text-[#A0AEC0] mb-4 leading-relaxed">Reconciliation as a Service，自动匹配多渠道交易，减少收入泄漏和运营成本</p>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="bg-[#4A5568]/30 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">多渠道对账</p>
+                                <p class="text-sm text-[#A0AEC0]">卡片、UPI、网银统一匹配</p>
+                            </div>
+                            <div class="bg-[#4A5568]/30 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">实时处理</p>
+                                <p class="text-sm text-[#A0AEC0]">即时对账，异常预警</p>
+                            </div>
+                            <div class="bg-[#4A5568]/30 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">AI算法</p>
+                                <p class="text-sm text-[#A0AEC0]">智能匹配和差异识别</p>
+                            </div>
+                            <div class="bg-[#4A5568]/30 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">收入保护</p>
+                                <p class="text-sm text-[#A0AEC0]">防止漏单和重复记账</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 bg-[#4A5568]/20 p-5 rounded-lg">
+                        <h3 class="text-lg font-bold text-[#F7FAFC] mb-3 flex items-center gap-2">
+                            <i class="fas fa-robot text-[#B79492]"></i>
+                            AI算法能力
+                        </h3>
+                        <div class="space-y-2">
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">机器学习交易模式识别</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">异常检测和自动标记</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">预测性对账建议</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">自动分类和归集</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-1/2">
+                    <div class="h-full bg-[#4A5568]/20 p-5 rounded-lg">
+                        <h3 class="text-xl font-bold text-[#F7FAFC] mb-3 flex items-center gap-2">
+                            <i class="fas fa-chart-bar text-[#B79492]"></i>
+                            可定制MIS仪表板
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="bg-[#B79492]/10 p-4 rounded-lg">
+                                <div class="flex items-center justify-between mb-2">
+                                    <p class="text-base font-semibold text-[#F7FAFC]">实时交易监控</p>
+                                    <i class="fas fa-eye text-[#B79492]"></i>
+                                </div>
+                                <p class="text-sm text-[#A0AEC0]">实时查看交易流量、成功率、响应时间等关键指标</p>
+                            </div>
+
+                            <div class="bg-[#B79492]/10 p-4 rounded-lg">
+                                <div class="flex items-center justify-between mb-2">
+                                    <p class="text-base font-semibold text-[#F7FAFC]">自定义报表生成</p>
+                                    <i class="fas fa-file-alt text-[#B79492]"></i>
+                                </div>
+                                <p class="text-sm text-[#A0AEC0]">按需生成日报、周报、月报，支持多格式导出</p>
+                            </div>
+
+                            <div class="bg-[#B79492]/10 p-4 rounded-lg">
+                                <div class="flex items-center justify-between mb-2">
+                                    <p class="text-base font-semibold text-[#F7FAFC]">深度数据分析</p>
+                                    <i class="fas fa-brain text-[#B79492]"></i>
+                                </div>
+                                <p class="text-sm text-[#A0AEC0]">客户行为分析、支付偏好洞察、趋势预测</p>
+                            </div>
+
+                            <div class="bg-[#B79492]/10 p-4 rounded-lg">
+                                <div class="flex items-center justify-between mb-2">
+                                    <p class="text-base font-semibold text-[#F7FAFC]">异常检测预警</p>
+                                    <i class="fas fa-exclamation-triangle text-[#B79492]"></i>
+                                </div>
+                                <p class="text-sm text-[#A0AEC0]">智能识别异常交易模式，实时推送风险预警</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-[#4A5568]">
+                            <div class="flex items-center justify-around">
+                                <div class="text-center">
+                                    <p class="text-sm text-[#A0AEC0] mb-1">数据保留</p>
+                                    <p class="text-xl font-bold text-[#B79492]">7年+</p>
+                                </div>
+                                <div class="w-px h-10 bg-[#4A5568]"></div>
+                                <div class="text-center">
+                                    <p class="text-sm text-[#A0AEC0] mb-1">查询响应</p>
+                                    <p class="text-xl font-bold text-[#B79492]">&lt;100ms</p>
+                                </div>
+                                <div class="w-px h-10 bg-[#4A5568]"></div>
+                                <div class="text-center">
+                                    <p class="text-sm text-[#A0AEC0] mb-1">报表类型</p>
+                                    <p class="text-xl font-bold text-[#B79492]">50+</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-3 bg-[#B79492]/10 p-3 rounded-lg border border-[#B79492]/30">
+                <p class="text-base text-[#F7FAFC]"><i class="fas fa-lightbulb text-[#B79492] mr-2"></i><strong>数据驱动决策：</strong>通过深度数据分析和智能洞察，帮助企业优化支付策略，提升运营效率</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 15: Chapter 4 -->
+    <div class="ppt-slide" type="chapter">
+        <img src="chapter4_business.png" alt="Chapter 4 Background" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1A202C]/90 via-[#1A202C]/80 to-[#1A202C]/95"></div>
+        <div class="relative h-full flex flex-col justify-center items-center text-center">
+            <div class="mb-6">
+                <div class="inline-block px-8 py-3 bg-[#B79492]/20 rounded-full border-2 border-[#B79492]">
+                    <span class="text-3xl font-bold text-[#B79492]">04</span>
+                </div>
+            </div>
+            <h2 class="text-7xl font-bold text-[#F7FAFC] mb-6 leading-tight">商业应用场景</h2>
+            <div class="h-1 w-48 bg-[#B79492] mb-8"></div>
+            <p class="text-2xl text-[#A0AEC0] max-w-4xl leading-relaxed">面向多行业的支付解决方案，服务全球企业数字化转型</p>
+        </div>
+    </div>
+
+    <!-- Slide 16: Target Customers & Industry Applications -->
+    <div class="ppt-slide" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-4">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">INDUSTRY APPLICATIONS</p>
+                <h2 class="text-4xl font-bold text-[#F7FAFC]">目标客户与行业应用</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-3"></div>
+            </div>
+
+            <div class="flex-1 grid grid-cols-2 gap-4">
+                <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 rounded-full bg-[#B79492]/30 flex items-center justify-center">
+                            <i class="fas fa-shopping-cart text-2xl text-[#B79492]"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">零售电商</h3>
+                            <p class="text-sm text-[#A0AEC0]">Retail & E-commerce</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0] mb-3 leading-relaxed"><strong>痛点：</strong>多渠道收款对账复杂、退款处理效率低、跨境支付成本高</p>
+                    <p class="text-sm text-[#A0AEC0] leading-relaxed"><strong>方案：</strong>统一支付网关、自动对账、多币种结算、快速退款</p>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-5 rounded-lg border-l-4 border-[#4A5568]">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 rounded-full bg-[#4A5568]/50 flex items-center justify-center">
+                            <i class="fas fa-university text-2xl text-[#B79492]"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">金融服务</h3>
+                            <p class="text-sm text-[#A0AEC0]">Banking & Financial Services</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0] mb-3 leading-relaxed"><strong>痛点：</strong>合规要求严格、资金清算时效性高、风险控制难度大</p>
+                    <p class="text-sm text-[#A0AEC0] leading-relaxed"><strong>方案：</strong>企业级安全合规、实时支付、AI反欺诈、资金管理系统</p>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-5 rounded-lg border-l-4 border-[#4A5568]">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 rounded-full bg-[#4A5568]/50 flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-2xl text-[#B79492]"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">教育培训</h3>
+                            <p class="text-sm text-[#A0AEC0]">Education & Training</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0] mb-3 leading-relaxed"><strong>痛点：</strong>学费分期需求、多校区资金管理、退款政策复杂</p>
+                    <p class="text-sm text-[#A0AEC0] leading-relaxed"><strong>方案：</strong>BNPL分期付款、统一资金管理、灵活退款处理</p>
+                </div>
+
+                <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 rounded-full bg-[#B79492]/30 flex items-center justify-center">
+                            <i class="fas fa-heartbeat text-2xl text-[#B79492]"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">医疗健康</h3>
+                            <p class="text-sm text-[#A0AEC0]">Healthcare & Medical</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0] mb-3 leading-relaxed"><strong>痛点：</strong>HIPAA合规要求、保险理赔复杂、患者隐私保护</p>
+                    <p class="text-sm text-[#A0AEC0] leading-relaxed"><strong>方案：</strong>医疗级数据保护、保险集成、患者账单管理</p>
+                </div>
+            </div>
+
+            <div class="mt-3 grid grid-cols-2 gap-4">
+                <div class="bg-[#4A5568]/20 p-4 rounded-lg">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="fas fa-plane text-xl text-[#B79492]"></i>
+                        <h4 class="text-base font-bold text-[#F7FAFC]">旅游酒店</h4>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0]">预订支付、押金管理、多币种结算</p>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-4 rounded-lg">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="fas fa-building text-xl text-[#B79492]"></i>
+                        <h4 class="text-base font-bold text-[#F7FAFC]">SaaS软件</h4>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0]">订阅计费、全球收款、嵌入式金融</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 17: Success Cases & Trust Endorsement -->
+    <div class="ppt-slide" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-4">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">TRUST & CREDIBILITY</p>
+                <h2 class="text-4xl font-bold text-[#F7FAFC]">成功案例与信任背书</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-6">
+                <div class="w-2/5 flex flex-col gap-4">
+                    <div class="bg-[#B79492]/10 p-6 rounded-lg border-l-4 border-[#B79492]">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-trophy text-3xl text-[#B79492]"></i>
+                            <h3 class="text-2xl font-bold text-[#F7FAFC]">知名客户</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-[#4A5568]/30 p-4 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <i class="fas fa-university text-2xl text-[#B79492]"></i>
+                                    <div>
+                                        <p class="text-lg font-bold text-[#F7FAFC]">BNY (纽约银行)</p>
+                                        <p class="text-sm text-[#A0AEC0]">全球领先的资产管理银行</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-[#4A5568]/30 p-4 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <i class="fas fa-landmark text-2xl text-[#B79492]"></i>
+                                    <div>
+                                        <p class="text-lg font-bold text-[#F7FAFC]">ICICI Bank</p>
+                                        <p class="text-sm text-[#A0AEC0]">印度第二大银行</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 bg-[#4A5568]/20 p-5 rounded-lg">
+                        <h3 class="text-lg font-bold text-[#F7FAFC] mb-3 flex items-center gap-2">
+                            <i class="fas fa-chart-line text-[#B79492]"></i>
+                            平台规模数据
+                        </h3>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="bg-[#B79492]/10 p-3 rounded text-center">
+                                <p class="text-3xl font-bold text-[#B79492] mb-1">千亿+</p>
+                                <p class="text-sm text-[#A0AEC0]">年交易量(美元)</p>
+                            </div>
+                            <div class="bg-[#B79492]/10 p-3 rounded text-center">
+                                <p class="text-3xl font-bold text-[#B79492] mb-1">百万+</p>
+                                <p class="text-sm text-[#A0AEC0]">日均交易笔数</p>
+                            </div>
+                            <div class="bg-[#B79492]/10 p-3 rounded text-center">
+                                <p class="text-3xl font-bold text-[#B79492] mb-1">99.99%</p>
+                                <p class="text-sm text-[#A0AEC0]">系统可用性</p>
+                            </div>
+                            <div class="bg-[#B79492]/10 p-3 rounded text-center">
+                                <p class="text-3xl font-bold text-[#B79492] mb-1">100+</p>
+                                <p class="text-sm text-[#A0AEC0]">服务企业数量</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-3/5">
+                    <div class="h-full bg-[#4A5568]/20 p-5 rounded-lg">
+                        <h3 class="text-xl font-bold text-[#F7FAFC] mb-4 flex items-center gap-2">
+                            <i class="fas fa-handshake text-[#B79492]"></i>
+                            客户信任见证
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="bg-[#B79492]/10 p-4 rounded-lg border-l-4 border-[#B79492]">
+                                <div class="flex items-start gap-3 mb-2">
+                                    <i class="fas fa-quote-left text-xl text-[#B79492] mt-1"></i>
+                                    <p class="text-base text-[#F7FAFC] leading-relaxed">"SwirePay的支付编排平台帮助我们显著提升了支付成功率和客户满意度，其技术实力和服务品质在行业内首屈一指。"</p>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <p class="text-sm text-[#A0AEC0]">— BNY技术总监</p>
+                                    <div class="flex text-[#B79492]">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-[#B79492]/10 p-4 rounded-lg border-l-4 border-[#B79492]">
+                                <div class="flex items-start gap-3 mb-2">
+                                    <i class="fas fa-quote-left text-xl text-[#B79492] mt-1"></i>
+                                    <p class="text-base text-[#F7FAFC] leading-relaxed">"通过SwirePay的智能对账系统，我们的财务运营效率提升了300%，大大降低了人工成本和错误率。"</p>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <p class="text-sm text-[#A0AEC0]">— ICICI Bank CFO</p>
+                                    <div class="flex text-[#B79492]">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-[#4A5568]/30 p-4 rounded-lg">
+                                <h4 class="text-base font-bold text-[#F7FAFC] mb-2">行业认可</h4>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-award text-[#B79492]"></i>
+                                        <p class="text-sm text-[#A0AEC0]">PCI DSS Level 1认证</p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-certificate text-[#B79492]"></i>
+                                        <p class="text-sm text-[#A0AEC0]">ISO 27001认证</p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-shield-alt text-[#B79492]"></i>
+                                        <p class="text-sm text-[#A0AEC0]">SOC 2 Type II</p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-globe text-[#B79492]"></i>
+                                        <p class="text-sm text-[#A0AEC0]">GDPR合规认证</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 18: Chapter 5 -->
+    <div class="ppt-slide" type="chapter">
+        <img src="chapter5_delivery.png" alt="Chapter 5 Background" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1A202C]/90 via-[#1A202C]/80 to-[#1A202C]/95"></div>
+        <div class="relative h-full flex flex-col justify-center items-center text-center">
+            <div class="mb-6">
+                <div class="inline-block px-8 py-3 bg-[#B79492]/20 rounded-full border-2 border-[#B79492]">
+                    <span class="text-3xl font-bold text-[#B79492]">05</span>
+                </div>
+            </div>
+            <h2 class="text-7xl font-bold text-[#F7FAFC] mb-6 leading-tight">项目交付计划</h2>
+            <div class="h-1 w-48 bg-[#B79492] mb-8"></div>
+            <p class="text-2xl text-[#A0AEC0] max-w-4xl leading-relaxed">3天快速交付官网1:1复刻与后台Demo，0费用启动</p>
+        </div>
+    </div>
+
+    <!-- Slide 19: 3-Day Delivery Plan -->
+    <div class="ppt-slide" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-4">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">DELIVERY PLAN</p>
+                <h2 class="text-4xl font-bold text-[#F7FAFC]">3天交付方案：官网1:1复刻</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-6">
+                <div class="w-3/5">
+                    <div class="h-full bg-[#4A5568]/20 p-5 rounded-lg">
+                        <h3 class="text-lg font-bold text-[#F7FAFC] mb-4 flex items-center gap-2">
+                            <i class="fas fa-calendar-alt text-[#B79492]"></i>
+                            交付时间表
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="bg-[#B79492]/10 p-4 rounded-lg border-l-4 border-[#B79492]">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-12 h-12 rounded-full bg-[#B79492]/30 flex items-center justify-center">
+                                        <span class="text-xl font-bold text-[#B79492]">D1</span>
+                                    </div>
+                                    <div>
+                                        <p class="text-lg font-bold text-[#F7FAFC]">第1天：设计与布局</p>
+                                        <p class="text-sm text-[#A0AEC0]">首页与核心页面设计</p>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-check-circle text-xs text-[#B79492]"></i>
+                                        <p class="text-[#A0AEC0]">首页Hero区域设计</p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-check-circle text-xs text-[#B79492]"></i>
+                                        <p class="text-[#A0AEC0]">产品服务页面布局</p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-check-circle text-xs text-[#B79492]"></i>
+                                        <p class="text-[#A0AEC0]">API文档页面设计</p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-check-circle text-xs text-[#B79492]"></i>
+                                        <p class="text-[#A0AEC0]">响应式布局实现</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-[#4A5568]/30 p-4 rounded-lg border-l-4 border-[#4A5568]">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-12 h-12 rounded-full bg-[#4A5568]/50 flex items-center justify-center">
+                                        <span class="text-xl font-bold text-[#F7FAFC]">D2</span>
+                                    </div>
+                                    <div>
+                                        <p class="text-lg font-bold text-[#F7FAFC]">第2天：功能开发</p>
+                                        <p class="text-sm text-[#A0AEC0]">交互功能与动画效果</p>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-check-circle text-xs text-[#B79492]"></i>
+                                        <p class="text-[#A0AEC0]">支付演示功能</p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-check-circle text-xs text-[#B79492]"></i>
+                                        <p class="text-[#A0AEC0]">API代码高亮展示</p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-check-circle text-xs text-[#B79492]"></i>
+                                        <p class="text-[#A0AEC0]">滚动动画效果</p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-check-circle text-xs text-[#B79492]"></i>
+                                        <p class="text-[#A0AEC0]">表单验证功能</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-[#B79492]/10 p-4 rounded-lg border-l-4 border-[#B79492]">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-12 h-12 rounded-full bg-[#B79492]/30 flex items-center justify-center">
+                                        <span class="text-xl font-bold text-[#B79492]">D3</span>
+                                    </div>
+                                    <div>
+                                        <p class="text-lg font-bold text-[#F7FAFC]">第3天：测试与部署</p>
+                                        <p class="text-sm text-[#A0AEC0]">全面测试与上线部署</p>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-check-circle text-xs text-[#B79492]"></i>
+                                        <p class="text-[#A0AEC0]">跨浏览器兼容性测试</p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-check-circle text-xs text-[#B79492]"></i>
+                                        <p class="text-[#A0AEC0]">移动端响应式优化</p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-check-circle text-xs text-[#B79492]"></i>
+                                        <p class="text-[#A0AEC0]">性能优化与压缩</p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-check-circle text-xs text-[#B79492]"></i>
+                                        <p class="text-[#A0AEC0]">Vercel部署与上线</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-2/5 flex flex-col gap-4">
+                    <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-file-alt text-2xl text-[#B79492]"></i>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">交付页面清单</h3>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between p-3 bg-[#4A5568]/30 rounded">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-home text-[#B79492]"></i>
+                                    <p class="text-base font-semibold text-[#F7FAFC]">首页</p>
+                                </div>
+                                <span class="text-xs text-[#A0AEC0]">Hero区域、功能展示、数据统计</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-[#4A5568]/30 rounded">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-cube text-[#B79492]"></i>
+                                    <p class="text-base font-semibold text-[#F7FAFC]">产品服务页</p>
+                                </div>
+                                <span class="text-xs text-[#A0AEC0]">四大核心模块详细介绍</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-[#4A5568]/30 rounded">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-code text-[#B79492]"></i>
+                                    <p class="text-base font-semibold text-[#F7FAFC]">API文档页</p>
+                                </div>
+                                <span class="text-xs text-[#A0AEC0]">集成指南、代码示例</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-[#4A5568]/30 rounded">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-building text-[#B79492]"></i>
+                                    <p class="text-base font-semibold text-[#F7FAFC]">关于我们页</p>
+                                </div>
+                                <span class="text-xs text-[#A0AEC0]">公司介绍、客户案例</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-[#4A5568]/30 rounded">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-envelope text-[#B79492]"></i>
+                                    <p class="text-base font-semibold text-[#F7FAFC]">联系支持页</p>
+                                </div>
+                                <span class="text-xs text-[#A0AEC0]">联系方式、帮助中心</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 bg-[#4A5568]/20 p-5 rounded-lg">
+                        <h3 class="text-lg font-bold text-[#F7FAFC] mb-3">技术特性</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">响应式设计，完美适配桌面和移动设备</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">现代化UI/UX，流畅动画效果</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">SEO优化，提升搜索引擎排名</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">快速加载，优化图片和代码压缩</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">Footer标注"Powered by Kimi-K2"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 20: Backend Demo System Features -->
+    <div class="ppt-slide" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-4">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">BACKEND DEMO</p>
+                <h2 class="text-4xl font-bold text-[#F7FAFC]">后台Demo系统功能</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-3"></div>
+            </div>
+
+            <div class="flex-1 grid grid-cols-2 gap-4">
+                <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 rounded-full bg-[#B79492]/30 flex items-center justify-center">
+                            <i class="fas fa-tachometer-alt text-2xl text-[#B79492]"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">交易管理面板</h3>
+                            <p class="text-sm text-[#A0AEC0]">Transaction Management</p>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">实时交易流量监控和状态跟踪</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">多维度交易查询和筛选功能</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">交易详情查看和异常标记</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">批量交易操作：退款、取消、重试</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-5 rounded-lg border-l-4 border-[#4A5568]">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 rounded-full bg-[#4A5568]/50 flex items-center justify-center">
+                            <i class="fas fa-wallet text-2xl text-[#B79492]"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">账户概览</h3>
+                            <p class="text-sm text-[#A0AEC0]">Account Overview</p>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">多币种账户余额实时显示</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">资金流水和收支明细查询</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">账户状态和风险等级评估</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">资金调拨和提现申请管理</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-5 rounded-lg border-l-4 border-[#4A5568]">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 rounded-full bg-[#4A5568]/50 flex items-center justify-center">
+                            <i class="fas fa-history text-2xl text-[#B79492]"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">支付记录查询</h3>
+                            <p class="text-sm text-[#A0AEC0]">Payment History</p>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">收款和付款记录完整追溯</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">按时间、金额、渠道等筛选</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">支付凭证和收据自动生成</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">导出Excel/PDF格式报表</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 rounded-full bg-[#B79492]/30 flex items-center justify-center">
+                            <i class="fas fa-file-invoice text-2xl text-[#B79492]"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">对账报表生成</h3>
+                            <p class="text-sm text-[#A0AEC0]">Reconciliation Reports</p>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">自动对账和差异识别</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">自定义报表模板和字段</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">定时生成和邮件推送</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                            <p class="text-sm text-[#A0AEC0]">财务数据可视化图表</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-3 grid grid-cols-2 gap-4">
+                <div class="bg-[#4A5568]/20 p-4 rounded-lg">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="fas fa-users-cog text-xl text-[#B79492]"></i>
+                        <h4 class="text-base font-bold text-[#F7FAFC]">用户权限管理</h4>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0]">角色分配、权限控制、操作日志审计</p>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-4 rounded-lg">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="fas fa-cog text-xl text-[#B79492]"></i>
+                        <h4 class="text-base font-bold text-[#F7FAFC]">商户信息管理</h4>
+                    </div>
+                    <p class="text-sm text-[#A0AEC0]">资料设置、API密钥管理、通知配置</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 21: Technical Implementation & Deployment -->
+    <div class="ppt-slide" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-5">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">TECHNICAL IMPLEMENTATION</p>
+                <h2 class="text-4xl font-bold text-[#F7FAFC]">技术实现与部署方案</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-3"></div>
+            </div>
+
+            <div class="flex-1 grid grid-cols-2 gap-5">
+                <div class="flex flex-col gap-4">
+                    <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-code text-2xl text-[#B79492]"></i>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">前端技术栈</h3>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="bg-[#4A5568]/30 p-3 rounded text-center">
+                                <i class="fab fa-html5 text-2xl text-[#B79492] mb-2"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC]">HTML5</p>
+                                <p class="text-xs text-[#A0AEC0] mt-1">语义化标记</p>
+                            </div>
+                            <div class="bg-[#4A5568]/30 p-3 rounded text-center">
+                                <i class="fab fa-css3-alt text-2xl text-[#B79492] mb-2"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC]">CSS3</p>
+                                <p class="text-xs text-[#A0AEC0] mt-1">Tailwind CSS</p>
+                            </div>
+                            <div class="bg-[#4A5568]/30 p-3 rounded text-center">
+                                <i class="fab fa-js text-2xl text-[#B79492] mb-2"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC]">JavaScript</p>
+                                <p class="text-xs text-[#A0AEC0] mt-1">ES6+语法</p>
+                            </div>
+                            <div class="bg-[#4A5568]/30 p-3 rounded text-center">
+                                <i class="fas fa-chart-bar text-2xl text-[#B79492] mb-2"></i>
+                                <p class="text-base font-semibold text-[#F7FAFC]">ECharts</p>
+                                <p class="text-xs text-[#A0AEC0] mt-1">数据可视化</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 bg-[#4A5568]/20 p-5 rounded-lg">
+                        <h3 class="text-lg font-bold text-[#F7FAFC] mb-3">开发工具与流程</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-start gap-2">
+                                <i class="fab fa-git-alt text-[#B79492] mt-1"></i>
+                                <p class="text-sm text-[#A0AEC0]"><strong>Git版本控制</strong> - 代码托管与协作开发</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-magic text-[#B79492] mt-1"></i>
+                                <p class="text-sm text-[#A0AEC0]"><strong>VS Code</strong> - 智能代码编辑与调试</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-paint-brush text-[#B79492] mt-1"></i>
+                                <p class="text-sm text-[#A0AEC0]"><strong>Figma</strong> - 设计稿与切图资源</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-bug text-[#B79492] mt-1"></i>
+                                <p class="text-sm text-[#A0AEC0]"><strong>Chrome DevTools</strong> - 调试与性能分析</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                    <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-rocket text-2xl text-[#B79492]"></i>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">部署方案</h3>
+                        </div>
+                        <div class="bg-[#4A5568]/30 p-4 rounded-lg mb-3">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fas fa-globe text-2xl text-[#B79492]"></i>
+                                <div>
+                                    <p class="text-lg font-bold text-[#F7FAFC]">Vercel平台部署</p>
+                                    <p class="text-sm text-[#A0AEC0]">域名: swirepay-demo.vercel.app</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-[#B79492] text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">全球CDN加速，访问速度&lt;2秒</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-[#B79492] text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">自动SSL证书，HTTPS安全访问</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-[#B79492] text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">持续部署，代码推送自动上线</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 bg-[#4A5568]/20 p-5 rounded-lg">
+                        <h3 class="text-lg font-bold text-[#F7FAFC] mb-3">性能优化</h3>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="bg-[#B79492]/10 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">图片优化</p>
+                                <p class="text-xs text-[#A0AEC0]">WebP格式，懒加载</p>
+                            </div>
+                            <div class="bg-[#B79492]/10 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">代码压缩</p>
+                                <p class="text-xs text-[#A0AEC0]">JS/CSS压缩，Tree Shaking</p>
+                            </div>
+                            <div class="bg-[#B79492]/10 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">缓存策略</p>
+                                <p class="text-xs text-[#A0AEC0]">浏览器缓存，CDN缓存</p>
+                            </div>
+                            <div class="bg-[#B79492]/10 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">SEO优化</p>
+                                <p class="text-xs text-[#A0AEC0]">Meta标签，结构化数据</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 bg-[#B79492]/10 p-4 rounded-lg border border-[#B79492]/30">
+                <p class="text-base text-[#F7FAFC]"><i class="fas fa-info-circle text-[#B79492] mr-2"></i><strong>交付标准：</strong>完整复制SwirePay官网所有页面和功能，确保视觉效果和交互体验1:1还原，Footer保留"Powered by Kimi-K2"标识</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 22: Future Development Roadmap -->
+    <div class="ppt-slide" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-5">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">DEVELOPMENT ROADMAP</p>
+                <h2 class="text-4xl font-bold text-[#F7FAFC]">后续发展规划</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-5">
+                <div class="w-3/5">
+                    <div class="h-full bg-[#4A5568]/20 p-5 rounded-lg">
+                        <h3 class="text-lg font-bold text-[#F7FAFC] mb-4 flex items-center gap-2">
+                            <i class="fas fa-road text-[#B79492]"></i>
+                            完整发展路线图
+                        </h3>
+                        <div class="relative">
+                            <div class="absolute left-6 top-0 bottom-0 w-0.5 bg-[#B79492]/30"></div>
+                            
+                            <div class="relative mb-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-full bg-[#B79492]/30 flex items-center justify-center relative z-10">
+                                        <span class="text-xl font-bold text-[#B79492]">01</span>
+                                    </div>
+                                    <div class="flex-1 bg-[#B79492]/10 p-4 rounded-lg">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <p class="text-lg font-bold text-[#F7FAFC]">壳子上线</p>
+                                            <span class="px-3 py-1 bg-[#B79492]/20 rounded-full text-xs text-[#B79492] font-semibold">第4-7天</span>
+                                        </div>
+                                        <p class="text-sm text-[#A0AEC0]">官网1:1复刻上线，域名配置完成，基础品牌形象建立</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative mb-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-full bg-[#4A5568]/50 flex items-center justify-center relative z-10">
+                                        <span class="text-xl font-bold text-[#F7FAFC]">02</span>
+                                    </div>
+                                    <div class="flex-1 bg-[#4A5568]/30 p-4 rounded-lg">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <p class="text-lg font-bold text-[#F7FAFC]">真收款通道集成</p>
+                                            <span class="px-3 py-1 bg-[#4A5568]/50 rounded-full text-xs text-[#A0AEC0] font-semibold">第8-21天</span>
+                                        </div>
+                                        <p class="text-sm text-[#A0AEC0]">Stripe、支付宝、微信支付等主流支付渠道接入，实现真实收款功能</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative mb-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-full bg-[#4A5568]/50 flex items-center justify-center relative z-10">
+                                        <span class="text-xl font-bold text-[#F7FAFC]">03</span>
+                                    </div>
+                                    <div class="flex-1 bg-[#4A5568]/30 p-4 rounded-lg">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <p class="text-lg font-bold text-[#F7FAFC]">英国/美国银行开户</p>
+                                            <span class="px-3 py-1 bg-[#4A5568]/50 rounded-full text-xs text-[#A0AEC0] font-semibold">第22-45天</span>
+                                        </div>
+                                        <p class="text-sm text-[#A0AEC0]">完成企业银行账户开设，建立资金清算通道，确保合规运营</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-full bg-[#4A5568]/50 flex items-center justify-center relative z-10">
+                                        <span class="text-xl font-bold text-[#F7FAFC]">04</span>
+                                    </div>
+                                    <div class="flex-1 bg-[#4A5568]/30 p-4 rounded-lg">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <p class="text-lg font-bold text-[#F7FAFC]">资金来源证明提交</p>
+                                            <span class="px-3 py-1 bg-[#4A5568]/50 rounded-full text-xs text-[#A0AEC0] font-semibold">第46-60天</span>
+                                        </div>
+                                        <p class="text-sm text-[#A0AEC0]">提交花旗银行3月流水和招商银行6月流水，完成合规审查</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-2/5 flex flex-col gap-4">
+                    <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-bullseye text-2xl text-[#B79492]"></i>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">关键里程碑</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="bg-[#4A5568]/30 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">MVP上线</p>
+                                <p class="text-sm text-[#A0AEC0]">基础支付功能可用</p>
+                            </div>
+                            <div class="bg-[#4A5568]/30 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">多通道接入</p>
+                                <p class="text-sm text-[#A0AEC0]">支持多种支付方式</p>
+                            </div>
+                            <div class="bg-[#4A5568]/30 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">全球合规</p>
+                                <p class="text-sm text-[#A0AEC0]">银行开户与监管认证</p>
+                            </div>
+                            <div class="bg-[#4A5568]/30 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">规模运营</p>
+                                <p class="text-sm text-[#A0AEC0]">正式商业化运营</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 bg-[#4A5568]/20 p-5 rounded-lg">
+                        <h3 class="text-lg font-bold text-[#F7FAFC] mb-3">风险控制</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-shield-alt text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">合规优先，确保所有监管要求达标</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-shield-alt text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">资金安全，建立多重保障机制</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-shield-alt text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">技术稳定，确保系统高可用性</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-shield-alt text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">数据安全，保护用户隐私信息</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 23: Chapter 6 -->
+    <div class="ppt-slide" type="chapter">
+        <img src="chapter6_company.png" alt="Chapter 6 Background" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1A202C]/90 via-[#1A202C]/80 to-[#1A202C]/95"></div>
+        <div class="relative h-full flex flex-col justify-center items-center text-center">
+            <div class="mb-6">
+                <div class="inline-block px-8 py-3 bg-[#B79492]/20 rounded-full border-2 border-[#B79492]">
+                    <span class="text-3xl font-bold text-[#B79492]">06</span>
+                </div>
+            </div>
+            <h2 class="text-7xl font-bold text-[#F7FAFC] mb-6 leading-tight">公司资质与合规</h2>
+            <div class="h-1 w-48 bg-[#B79492] mb-8"></div>
+            <p class="text-2xl text-[#A0AEC0] max-w-4xl leading-relaxed">双国公司架构，全球化合规运营</p>
+        </div>
+    </div>
+
+    <!-- Slide 24: Company Registration Information -->
+    <div class="ppt-slide" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-4">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">COMPANY INFORMATION</p>
+                <h2 class="text-4xl font-bold text-[#F7FAFC]">公司注册信息</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-3"></div>
+            </div>
+
+            <div class="flex-1 grid grid-cols-2 gap-4">
+                <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fas fa-flag-usa text-4xl text-[#B79492]"></i>
+                        <div>
+                            <h3 class="text-2xl font-bold text-[#F7FAFC]">美国公司主体</h3>
+                            <p class="text-sm text-[#A0AEC0]">United States Entity</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="bg-[#4A5568]/30 p-4 rounded-lg">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-building text-[#B79492]"></i>
+                                <p class="text-sm text-[#A0AEC0]">公司名称</p>
+                            </div>
+                            <p class="text-lg font-bold text-[#F7FAFC]">North American YunTong Inc</p>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="bg-[#4A5568]/30 p-3 rounded">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fas fa-hashtag text-[#B79492] text-sm"></i>
+                                    <p class="text-xs text-[#A0AEC0]">雇主识别号码 (EIN)</p>
+                                </div>
+                                <p class="text-base font-bold text-[#F7FAFC]">41-2539009</p>
+                            </div>
+                            <div class="bg-[#4A5568]/30 p-3 rounded">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fas fa-file-alt text-[#B79492] text-sm"></i>
+                                    <p class="text-xs text-[#A0AEC0]">公司编号 (CO)</p>
+                                </div>
+                                <p class="text-base font-bold text-[#F7FAFC]">20258232655</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#4A5568]/30 p-4 rounded-lg">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-map-marker-alt text-[#B79492]"></i>
+                                <p class="text-sm text-[#A0AEC0]">注册地址</p>
+                            </div>
+                            <p class="text-base text-[#F7FAFC] leading-relaxed">1500 N Grant St Ste R<br>Denver, CO 80203<br>United States</p>
+                        </div>
+
+                        <div class="bg-[#4A5568]/30 p-4 rounded-lg">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-user-tie text-[#B79492]"></i>
+                                <p class="text-sm text-[#A0AEC0]">法人代表</p>
+                            </div>
+                            <p class="text-lg font-bold text-[#F7FAFC]">RUAN Xianlang</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#4A5568]/20 p-5 rounded-lg border-l-4 border-[#4A5568]">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fas fa-landmark text-4xl text-[#B79492]"></i>
+                        <div>
+                            <h3 class="text-2xl font-bold text-[#F7FAFC]">英国公司主体</h3>
+                            <p class="text-sm text-[#A0AEC0]">United Kingdom Entity</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="bg-[#4A5568]/30 p-4 rounded-lg">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-building text-[#B79492]"></i>
+                                <p class="text-sm text-[#A0AEC0]">公司名称</p>
+                            </div>
+                            <p class="text-lg font-bold text-[#F7FAFC]">LEGALINKS CONSULTANT LIMITED</p>
+                        </div>
+
+                        <div class="bg-[#4A5568]/30 p-4 rounded-lg">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-file-alt text-[#B79492]"></i>
+                                <p class="text-sm text-[#A0AEC0]">公司编号 (Co.No.)</p>
+                            </div>
+                            <p class="text-lg font-bold text-[#F7FAFC]">16849538</p>
+                        </div>
+
+                        <div class="bg-[#4A5568]/30 p-4 rounded-lg">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-map-marker-alt text-[#B79492]"></i>
+                                <p class="text-sm text-[#A0AEC0]">注册地址</p>
+                            </div>
+                            <p class="text-base text-[#F7FAFC] leading-relaxed">ST18 0BF<br>United Kingdom</p>
+                        </div>
+
+                        <div class="bg-[#4A5568]/30 p-4 rounded-lg">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-user-tie text-[#B79492]"></i>
+                                <p class="text-sm text-[#A0AEC0]">法人代表</p>
+                            </div>
+                            <p class="text-lg font-bold text-[#F7FAFC]">LIN Chun</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-3 bg-[#B79492]/10 p-4 rounded-lg border border-[#B79492]/30">
+                <p class="text-base text-[#F7FAFC]"><i class="fas fa-globe text-[#B79492] mr-2"></i><strong>双国架构优势：</strong>美国和英国双重公司主体，实现全球化合规运营，满足不同市场的监管要求，为跨境支付业务奠定坚实基础</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 25: Legal Representative & Domain Assets -->
+    <div class="ppt-slide" type="content">
+        <div class="h-full flex flex-col">
+            <div class="mb-5">
+                <p class="text-base text-[#B79492] font-semibold tracking-wider mb-2">LEGAL & DOMAIN</p>
+                <h2 class="text-4xl font-bold text-[#F7FAFC]">法人信息与域名资产</h2>
+                <div class="h-1 w-24 bg-[#B79492] mt-3"></div>
+            </div>
+
+            <div class="flex-1 flex gap-5">
+                <div class="w-3/5">
+                    <div class="h-full bg-[#4A5568]/20 p-5 rounded-lg">
+                        <h3 class="text-lg font-bold text-[#F7FAFC] mb-4 flex items-center gap-2">
+                            <i class="fas fa-users text-[#B79492]"></i>
+                            法人信息
+                        </h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-[#B79492]/10 p-4 rounded-lg border-l-4 border-[#B79492]">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <i class="fas fa-user-tie text-2xl text-[#B79492]"></i>
+                                    <div>
+                                        <p class="text-lg font-bold text-[#F7FAFC]">RUAN Xianlang</p>
+                                        <p class="text-sm text-[#A0AEC0]">美国公司法人</p>
+                                    </div>
+                                </div>
+                                <div class="space-y-2">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-building text-[#B79492] text-sm"></i>
+                                        <p class="text-sm text-[#A0AEC0]">North American YunTong Inc</p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-map-marker-alt text-[#B79492] text-sm"></i>
+                                        <p class="text-sm text-[#A0AEC0]">Denver, Colorado</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-[#4A5568]/30 p-4 rounded-lg border-l-4 border-[#4A5568]">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <i class="fas fa-user-tie text-2xl text-[#B79492]"></i>
+                                    <div>
+                                        <p class="text-lg font-bold text-[#F7FAFC]">LIN Chun</p>
+                                        <p class="text-sm text-[#A0AEC0]">英国公司法人</p>
+                                    </div>
+                                </div>
+                                <div class="space-y-2">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-building text-[#B79492] text-sm"></i>
+                                        <p class="text-sm text-[#A0AEC0]">LEGALINKS CONSULTANT LIMITED</p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-map-marker-alt text-[#B79492] text-sm"></i>
+                                        <p class="text-sm text-[#A0AEC0]">United Kingdom</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 pt-4 border-t border-[#4A5568]">
+                            <h4 class="text-base font-bold text-[#F7FAFC] mb-3 flex items-center gap-2">
+                                <i class="fas fa-shield-alt text-[#B79492]"></i>
+                                法人责任与权限
+                            </h4>
+                            <div class="grid grid-cols-3 gap-3">
+                                <div class="bg-[#B79492]/10 p-3 rounded text-center">
+                                    <i class="fas fa-file-signature text-xl text-[#B79492] mb-2"></i>
+                                    <p class="text-sm font-semibold text-[#F7FAFC] mb-1">法律签署</p>
+                                    <p class="text-xs text-[#A0AEC0]">合同与协议签署</p>
+                                </div>
+                                <div class="bg-[#B79492]/10 p-3 rounded text-center">
+                                    <i class="fas fa-gavel text-xl text-[#B79492] mb-2"></i>
+                                    <p class="text-sm font-semibold text-[#F7FAFC] mb-1">合规责任</p>
+                                    <p class="text-xs text-[#A0AEC0]">确保公司合规运营</p>
+                                </div>
+                                <div class="bg-[#B79492]/10 p-3 rounded text-center">
+                                    <i class="fas fa-handshake text-xl text-[#B79492] mb-2"></i>
+                                    <p class="text-sm font-semibold text-[#F7FAFC] mb-1">对外代表</p>
+                                    <p class="text-xs text-[#A0AEC0]">代表公司对外事务</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-2/5 flex flex-col gap-4">
+                    <div class="bg-[#B79492]/10 p-5 rounded-lg border-l-4 border-[#B79492]">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-globe text-2xl text-[#B79492]"></i>
+                            <h3 class="text-xl font-bold text-[#F7FAFC]">域名资产</h3>
+                        </div>
+                        <div class="bg-[#4A5568]/30 p-4 rounded-lg mb-3">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fas fa-link text-2xl text-[#B79492]"></i>
+                                <div>
+                                    <p class="text-lg font-bold text-[#F7FAFC]">当前域名</p>
+                                    <p class="text-sm text-[#B79492] font-mono">swirepay-demo.vercel.app</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">Vercel平台托管，全球CDN加速</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">SSL证书自动配置，HTTPS安全访问</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fas fa-check text-[#B79492] mt-1 text-sm"></i>
+                                <p class="text-sm text-[#A0AEC0]">支持自定义域名绑定</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 bg-[#4A5568]/20 p-5 rounded-lg">
+                        <h3 class="text-lg font-bold text-[#F7FAFC] mb-3">域名灵活性</h3>
+                        <div class="space-y-3">
+                            <div class="bg-[#B79492]/10 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">后期可修改</p>
+                                <p class="text-sm text-[#A0AEC0]">可根据业务需求更换为正式域名</p>
+                            </div>
+                            <div class="bg-[#B79492]/10 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">品牌一致性</p>
+                                <p class="text-sm text-[#A0AEC0]">支持www.swirepay.com等官方域名</p>
+                            </div>
+                            <div class="bg-[#B79492]/10 p-3 rounded">
+                                <p class="text-base font-semibold text-[#F7FAFC] mb-1">多域名支持</p>
+                                <p class="text-sm text-[#A0AEC0]">可配置多个域名指向同一应用</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 26: Final Page -->
+    <div class="ppt-slide" type="final">
+        <img src="final_image.png" alt="Final Background" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1A202C]/85 via-[#1A202C]/90 to-[#1A202C]/95"></div>
+        <div class="relative h-full flex flex-col justify-center items-center text-center">
+            <div class="max-w-5xl">
+                <h2 class="text-7xl font-bold text-[#F7FAFC] mb-6 leading-tight">开启支付新纪元</h2>
+                <div class="h-1 w-48 bg-[#B79492] mx-auto mb-8"></div>
+                
+                <p class="text-3xl font-bold text-[#B79492] mb-6">SwirePay</p>
+                <p class="text-2xl text-[#A0AEC0] mb-10 leading-relaxed">您的全球支付编排伙伴</p>
+
+                <div class="flex items-center justify-center gap-8 mb-10">
+                    <div class="bg-[#B79492]/20 px-8 py-4 rounded-lg border border-[#B79492]/40">
+                        <p class="text-base text-[#B79492] font-semibold mb-1">3天交付</p>
+                        <p class="text-sm text-[#A0AEC0]">官网1:1复刻 + 后台Demo</p>
+                    </div>
+                    <div class="bg-[#B79492]/20 px-8 py-4 rounded-lg border border-[#B79492]/40">
+                        <p class="text-base text-[#B79492] font-semibold mb-1">0费用启动</p>
+                        <p class="text-sm text-[#A0AEC0]">无前期成本，快速上线</p>
+                    </div>
+                    <div class="bg-[#B79492]/20 px-8 py-4 rounded-lg border border-[#B79492]/40">
+                        <p class="text-base text-[#B79492] font-semibold mb-1">Powered by Kimi-K2</p>
+                        <p class="text-sm text-[#A0AEC0]">AI驱动的专业服务</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#4A5568]/30 p-6 rounded-lg border border-[#B79492]/30 mb-8">
+                    <p class="text-xl text-[#F7FAFC] leading-relaxed">
+                        <i class="fas fa-quote-left text-[#B79492] mr-2"></i>
+                        通过SwirePay的支付编排平台，企业可以快速接入全球支付生态，<br>
+                        实现资金流动的自动化管理，开启数字化金融运营新篇章
+                        <i class="fas fa-quote-right text-[#B79492] ml-2"></i>
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-center gap-6">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-globe text-[#B79492]"></i>
+                        <p class="text-base text-[#A0AEC0]">全球化运营</p>
+                    </div>
+                    <div class="w-px h-6 bg-[#4A5568]"></div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-shield-alt text-[#B79492]"></i>
+                        <p class="text-base text-[#A0AEC0]">企业级安全</p>
+                    </div>
+                    <div class="w-px h-6 bg-[#4A5568]"></div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-rocket text-[#B79492]"></i>
+                        <p class="text-base text-[#A0AEC0]">快速集成</p>
+                    </div>
+                    <div class="w-px h-6 bg-[#4A5568]"></div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-chart-line text-[#B79492]"></i>
+                        <p class="text-base text-[#A0AEC0]">智能分析</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
