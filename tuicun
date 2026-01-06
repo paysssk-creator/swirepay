@@ -1,0 +1,6 @@
+# 创建GitHub仓库
+git init
+git add .
+git commit -m "Initial commit - SwirePay开源版本"
+git remote add origin https://github.com/yourusername/SwirePay.git
+git push -u origin main
